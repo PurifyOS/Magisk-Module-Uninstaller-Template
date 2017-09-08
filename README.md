@@ -27,9 +27,10 @@ XDA Developers Thread : [**[Magisk] Magisk Module Uninstaller Template**](https:
 
 ## Notes ##  
   
-Kindly Change what is required in "config.sh", ie "MODID" & "print_modname()".  
-The "config.sh" from Here can also be Copied/Replaced over by "config.sh" from your **Magisk Module Installer**.[ No Problem Doing This ]  
-Also If Needed add Script in Function "script_before_uninstall()" & "script_after_uninstall()" .  
+Kindly Change what is required in "config.sh" file , ThatIs "MODID" & "print_modname()".  
+Also If Needed add Script in Function "script_before_uninstall()" & "script_after_uninstall()" in "config.sh" file .  
+  
+And Also Edit this README file as per the Needs , But somewhere in a corner Kindly Credit me for my Work , It's Highly Appreciated .  
   
 I have **Copied** the Code from "magisk-module-template" ZIP by **topjohnwu**.  
 I have **Edited** some part of the Code to make it work for All General Magisk Module.  
@@ -57,6 +58,10 @@ You might require to make changes to "update-binary" if you did some changes to 
 #### Credit's ####
   
 Thanks **topjohnwu** for Magisk & for the code in "magisk-module-template" , could not have done without it.  
+  
+Kindly Give me some Credits for my Work , It's Highly Appreciated .  
+And Also just Informing or mentioning me wherever it is used , will give me some satisfaction .  
+Thanking You for the Same.  
   
 
 ----------
@@ -100,5 +105,15 @@ Thanks **topjohnwu** for Magisk & for the code in "magisk-module-template" , cou
 - ReNamed `INSTALLER` to `UNINSTALLER` .   
 - Added Function `script_before_uninstall()` & `script_after_uninstall()` .  
 - Close to Magisk Module Template v4 ! .  
+   
+#### v1.5 ####  
+- Updated `README` .  
+- Updated `update-binary` .  
+- Updated `config.sh` .  
+- Added Some CODE .  
+- Removed all Un-Necessary Function's .  
+- Removed all Un-Necessary Variable's .  
+- ReNamed Variable `INSTALLER` to `UNINSTALLER` .   
+- Close to Magisk Module Template v1400 ! .  
   
 .
