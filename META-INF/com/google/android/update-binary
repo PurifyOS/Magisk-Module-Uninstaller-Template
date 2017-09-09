@@ -49,7 +49,6 @@ ZIP=$3
 readlink /proc/$$/fd/$OUTFD 2>/dev/null | grep /tmp >/dev/null
 if [ "$?" -eq "0" ]; then
   OUTFD=0
-
   for FD in `ls /proc/$$/fd`; do
     readlink /proc/$$/fd/$FD 2>/dev/null | grep pipe >/dev/null
     if [ "$?" -eq "0" ]; then
@@ -97,30 +96,6 @@ $BOOTMODE && ! is_mounted /magisk && abort "! Magisk is not activated!"
 
 # We need busybox/binaries to be setup
 $BOOTMODE && boot_actions || recovery_actions
-
-# Dummy MODID
-MODID=UnInstall
-
-# Dummy print_modname() Fn
-print_modname()
-{
-  # Dummy print_modname() Fn
-  ui_print "*******************************"
-  ui_print "    Magisk Module Uninstall    "
-  ui_print "*******************************"
-}
-
-# Dummy script_before_uninstall() Fn
-script_before_uninstall()
-{
-  # Dummy script_before_uninstall() Fn
-}
-
-# Dummy script_after_uninstall() Fn
-script_after_uninstall()
-{
-  # Dummy script_after_uninstall() Fn
-}
 
 ##########################################################################################
 # Preparation
